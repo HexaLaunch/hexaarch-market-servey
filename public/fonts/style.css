@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DM Sans"), url("DMSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DM Sans Medium";
+  font-style: normal;
+  font-weight: medium;
+  src: local("DM Sans Medium"), url("DMSans-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DM Sans Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: local("DM Sans Bold"), url("DMSans-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "DM Sans Thin";
+  font-style: normal;
+  font-weight: thin;
+  src: local("DM Sans Thin"), url("DMSans-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: "DM Sans Light";
+  font-style: normal;
+  font-weight: light;
+  src: local("DM Sans Light"), url("DMSans-Light.woff") format("woff");
+}
