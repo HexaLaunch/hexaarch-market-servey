@@ -29,7 +29,7 @@ const features = [
   {
     title: "Professional Management",
     desc: "Ensures optimal return on investment, transparency & accountability",
-    icon: "/images/reit/significance/icon6.svg",
+    icon: "/images/home/icon6.svg",
   },
 ];
 
