@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 
 const Reit = () => {
   return (
-    <section className="py-16 px-6 md:px-12 max-w-6xl mx-auto space-y-14 text-gray-800">
+    <section
+      className="py-16 px-6 md:px-12 max-w-6xl mx-auto space-y-14 text-gray-800"
+      id="reit"
+    >
       <motion.div
         initial={{ opacity: 0, scale: 0.8, y: 20 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -53,19 +56,23 @@ const Reit = () => {
               <ul className="space-y-3 text-gray-800 text-[15px] leading-relaxed">
                 {i === 0 ? (
                   <>
-                    <li>✅ Highly liquid – traded like stocks</li>
-                    <li>💰 Low capital required to invest</li>
-                    <li>🛠 No property management needed</li>
-                    <li>📈 Regular dividend income</li>
-                    <li>🏙 Diversified real estate portfolio</li>
+                    <ul className="list-disc list-inside space-y-2 text-gray-700 text-base leading-relaxed">
+                      <li>Highly liquid – traded like stocks</li>
+                      <li>Low capital required to invest</li>
+                      <li>No property management needed</li>
+                      <li>Regular dividend income</li>
+                      <li>Diversified real estate portfolio</li>
+                    </ul>
                   </>
                 ) : (
                   <>
-                    <li>❌ Illiquid – selling takes time</li>
-                    <li>💸 High upfront investment</li>
-                    <li>🔧 Requires active management</li>
-                    <li>🏠 Income through rent or resale</li>
-                    <li>📍 Limited to fewer properties</li>
+                    <ul className="list-disc list-inside space-y-2 text-gray-700 text-base leading-relaxed">
+                      <li>Illiquid – selling takes time</li>
+                      <li>High upfront investment</li>
+                      <li>Requires active management</li>
+                      <li>Income through rent or resale</li>
+                      <li>Limited to fewer properties</li>
+                    </ul>
                   </>
                 )}
               </ul>

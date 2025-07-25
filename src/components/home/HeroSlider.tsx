@@ -15,7 +15,7 @@ const HeroSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 5000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
@@ -30,13 +30,27 @@ const HeroSlider = () => {
                 index === current ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
             >
-              {/* Background Image */}
               <img
                 src={slide}
+                loading="lazy"
                 alt={`Slide ${index}`}
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-center bg-gray-100 transition-all duration-500 ease-in-out"
+                onLoad={(e) => e.currentTarget.classList.remove("bg-gray-100")}
               />
             </div>
+          ))}
+        </div>
+
+        {/* Dots / Pagination */}
+        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 z-20">
+          {images.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrent(i)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                i === current ? "bg-white" : "bg-white/40"
+              }`}
+            />
           ))}
         </div>
       </Carousel>
